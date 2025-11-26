@@ -68,7 +68,7 @@
   display: inline-block;
   position: relative;
   transition: color 0.3s ease;
-  font-family: 'Comic Sans MS', 'Comic Sans', sans-serif;
+  font-family: 'Comic Sans MS', 'Comic Sans', 'Caveat', sans-serif;
 }
 
 .nav-links a::before {
@@ -236,4 +236,3 @@
     font-size: 1.2rem;
   }
 }
-

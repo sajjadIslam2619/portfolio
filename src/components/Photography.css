@@ -16,7 +16,7 @@
   text-align: center;
   margin-bottom: 3rem;
   transition: color 0.3s ease;
-  font-family: 'Comic Sans MS', 'Comic Sans', sans-serif;
+  font-family: 'Comic Sans MS', 'Comic Sans', 'Caveat', sans-serif;
 }
 
 .section-title:hover {
@@ -103,7 +103,7 @@
   color: #ffffff;
   font-weight: 400;
   font-size: 1rem;
-  font-family: 'Brush Script MT', 'Lucida Handwriting', cursive;
+  font-family: 'Brush Script MT', 'Lucida Handwriting', 'Caveat', cursive;
   letter-spacing: 0.5px;
 }
 
