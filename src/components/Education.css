@@ -173,7 +173,8 @@
     border-right: 0;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
-    right: auto;
+    left: -2rem !important;
+    right: auto !important;
   }
 
   /*.timeline-item:hover .timeline-marker {
