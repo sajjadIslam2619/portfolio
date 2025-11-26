@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './About.css'
+import profileImage from '../../images/sajjad-dp.jpg'
 
 function About() {
   const [imageError, setImageError] = useState(false)
@@ -10,7 +11,7 @@ function About() {
         <div className="about-image-container">
           {!imageError ? (
             <img
-              src="/images/sajjad-dp.jpg"
+              src={profileImage}
               alt="Profile"
               className="about-image"
               onError={() => setImageError(true)}

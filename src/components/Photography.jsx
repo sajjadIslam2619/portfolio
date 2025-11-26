@@ -1,16 +1,21 @@
 import React, { useState } from 'react'
 import './Photography.css'
+import horseArizona from '../../images/photography/horse-Arizona.jpg'
+import lakeMichigan from '../../images/photography/lake-michigan.jpg'
+import redbudPlatt from '../../images/photography/redbud-platt.jpg'
+import snowMilw from '../../images/photography/snow-milw.jpg'
+import gondolaVenice from '../../images/photography/gondola-venice.jpg'
 
 function Photography() {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [selectedImage, setSelectedImage] = useState(null)
 
   const images = [
-    { id: 1, url: '/images/photography/horse-Arizona.jpg', title: 'Wild West.' },
-    { id: 2, url: '/images/photography/lake-michigan.jpg', title: 'Last Light.' },
-    { id: 3, url: '/images/photography/redbud-platt.jpg', title: 'Colors!!' },
-    { id: 4, url: '/images/photography/snow-milw.jpg', title: 'Emptiness..' },
-    { id: 5, url: '/images/photography/gondola-venice.jpg', title: 'Serenity.' }
+    { id: 1, url: horseArizona, title: 'Wild West.' },
+    { id: 2, url: lakeMichigan, title: 'Last Light.' },
+    { id: 3, url: redbudPlatt, title: 'Colors!!' },
+    { id: 4, url: snowMilw, title: 'Emptiness..' },
+    { id: 5, url: gondolaVenice, title: 'Serenity.' }
   ]
 
   const handlePrev = () => {
@@ -48,13 +53,13 @@ function Photography() {
           </button>
           <div className="images-container">
             {getVisibleImages().map((image, index) => (
-              <div 
-                key={image.id} 
+              <div
+                key={image.id}
                 className="photo-card"
                 onClick={() => handleImageClick(image)}
               >
-                <img 
-                  src={image.url} 
+                <img
+                  src={image.url}
                   alt={image.title}
                   className="photo-image"
                   onError={(e) => {
@@ -89,8 +94,8 @@ function Photography() {
             <button className="modal-close" onClick={closeModal} aria-label="Close">
               ×
             </button>
-            <img 
-              src={selectedImage.url} 
+            <img
+              src={selectedImage.url}
               alt={selectedImage.title}
               className="modal-image"
               onError={(e) => {

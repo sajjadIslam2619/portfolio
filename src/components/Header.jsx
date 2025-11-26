@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import './Header.css'
+import logoImage from '../../images/sajjad-logo.png'
 
 function Header() {
   const [activeSection, setActiveSection] = useState('about')
 
   useEffect(() => {
     const sections = ['about', 'experience', 'education', 'projects', 'activities', 'publications', 'photography', 'contact']
-    
+
     const observerOptions = {
       root: null,
       rootMargin: '-20% 0px -70% 0px',
@@ -56,14 +57,14 @@ function Header() {
       <nav className="nav">
         <div className="nav-container">
           <div className="logo">
-            <img src="/images/sajjad-logo.png" alt="Sajjad Logo" className="logo-image" />
+            <img src={logoImage} alt="Sajjad Logo" className="logo-image" />
           </div>
           <ul className="nav-links">
             {navLinks.map((link, index) => (
               <React.Fragment key={link.id}>
                 {index > 0 && <li className="nav-separator">|</li>}
                 <li>
-                  <a 
+                  <a
                     href={`#${link.id}`}
                     className={activeSection === link.id ? 'active' : ''}
                   >
