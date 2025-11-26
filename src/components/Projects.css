@@ -1,0 +1,422 @@
+.projects {
+  background-color: #ffffff;
+  padding: 2rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #556B2F;
+  text-align: center;
+  margin-bottom: 3rem;
+  transition: color 0.3s ease;
+  font-family: 'Comic Sans MS', 'Comic Sans', sans-serif;
+}
+
+.section-title:hover {
+  color: #4B5320;
+}
+
+.projects-slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.slider-btn {
+  background-color: #556B2F;
+  color: #ffffff;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+.slider-btn:hover {
+  background-color: #4B5320;
+  transform: scale(1.1);
+}
+
+.projects-container {
+  display: flex;
+  gap: 2rem;
+  overflow: hidden;
+  flex: 1;
+  justify-content: center;
+}
+
+.project-card {
+  background-color: #f8f8f8;
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+  min-width: 300px;
+  max-width: 350px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(85, 107, 47, 0.3);
+  background-color: #f5f5f0;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #556B2F;
+  margin-bottom: 1rem;
+  transition: color 0.3s ease;
+}
+
+.project-card:hover .project-title {
+  color: #4B5320;
+}
+
+.project-description {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.project-tech {
+  font-size: 0.9rem;
+  color: #666;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.view-project-btn {
+  background-color: #556B2F;
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  margin-top: auto;
+}
+
+.view-project-btn:hover {
+  background-color: #4B5320;
+}
+
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid #556B2F;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #556B2F;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  padding: 2rem;
+}
+
+.modal-content {
+  background-color: #ffffff;
+  border-radius: 8px;
+  max-width: 900px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  padding: 2rem;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: #556B2F;
+  color: #ffffff;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 1;
+}
+
+.modal-close:hover {
+  background-color: #4B5320;
+}
+
+.modal-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #556B2F;
+  margin-bottom: 1.5rem;
+}
+
+.modal-media-container {
+  position: relative;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  overflow: visible;
+  width: 100%;
+}
+
+.modal-media {
+  width: 100%;
+  display: block;
+  position: relative;
+}
+
+.modal-video {
+  width: 100%;
+  max-height: 500px;
+  border-radius: 8px;
+}
+
+.modal-image {
+  width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.vimeo-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  /* 16:9 aspect ratio */
+  height: 0;
+  overflow: visible;
+  border-radius: 8px;
+  background-color: #000;
+  margin: 0;
+}
+
+.vimeo-wrapper iframe,
+.vimeo-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  border: 0;
+  z-index: 1;
+}
+
+.vimeo-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.media-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(85, 107, 47, 0.8);
+  color: #ffffff;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 1;
+}
+
+.media-nav-btn:hover {
+  background-color: rgba(75, 83, 32, 0.9);
+}
+
+.prev-media {
+  left: 1rem;
+}
+
+.next-media {
+  right: 1rem;
+}
+
+.media-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.media-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid #556B2F;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.media-dot.active {
+  background-color: #556B2F;
+}
+
+.modal-info {
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.modal-description {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.modal-description p {
+  margin: 0;
+  margin-bottom: 0.8rem;
+}
+
+.modal-description p:last-child {
+  margin-bottom: 0;
+}
+
+.modal-description .description-bullet {
+  margin-left: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.modal-tech {
+  font-size: 0.9rem;
+  color: #666;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+.modal-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.modal-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #556B2F;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.modal-link-btn:hover {
+  background-color: #4B5320;
+  transform: translateY(-2px);
+}
+
+.modal-link-btn .link-icon {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .projects {
+    padding: 3rem 0;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .projects-slider {
+    flex-direction: column;
+  }
+
+  .slider-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
+
+  .projects-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .project-card {
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  .modal-content {
+    padding: 1.5rem;
+    max-height: 95vh;
+  }
+
+  .modal-title {
+    font-size: 1.5rem;
+  }
+
+  .media-nav-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
+
+  .prev-media {
+    left: 0.5rem;
+  }
+
+  .next-media {
+    right: 0.5rem;
+  }
+}
