@@ -36,8 +36,8 @@ function Projects() {
             ]
         },
         {
-            title: 'AI enhanced PSS',
-            shortDescription: 'Peer Support System with AI',
+            title: 'LLM-enhanced Peer Support System',
+            shortDescription: 'LLM-enhanced Peer Support System for people who use drugs',
             fullDescription: `
             This project develops an AI-enhanced Peer Support System (PSS) designed to support people who use drugs (PWUD) through structured surveys, risk scoring, and AI-assisted mentor responses. The application is built using Django, React, PostgreSQL, and Azure deployment pipelines, providing role-specific workflows for mentors and mentees.
 
@@ -53,7 +53,7 @@ function Projects() {
         },
 
         {
-            title: 'LLM  Evaluation (In-Progress)',
+            title: 'LLM  Evaluation Framework (In-Progress)',
             shortDescription: 'LLM Fesibility Evaluation for Peer Support System.',
             fullDescription: 'This project develops an AI-enhanced peer support evaluation application that assesses how effectively large language models (LLMs) such as GPT, Gemini, and DeepSeek can generate empathetic, culturally competent responses for veterans with PTSD. The system integrates a mental-status classifier with a prompt-engineering pipeline and enables real-time evaluation of LLM-generated responses by veterans and peer mentors. Through structured prompts, few-shot examples, and iterative lab-based rating sessions, the application collects human feedback on empathy, tone, cultural fit, safety, and relevance. The platform supports ablation studies, LLM-as-Judge scoring, and human-centered usability testing, providing a rigorous framework for comparing LLM performance in sensitive mental health contexts.',
             tech: 'Python (FastAPI, SQLAlchemy), React',
@@ -66,7 +66,7 @@ function Projects() {
             title: 'Mental Health Disorder Analysis',
             shortDescription: 'Mental Health Disorder Analysis',
             fullDescription: 'A comprehensive research project for mental health condition classification using explainable AI (XAI) techniques. This project implements transformer-based models to classify text into mental health categories including depression, anxiety, stress, PTSD, suicide ideation, and none.',
-            tech: 'React, TypeScript',
+            tech: 'BERT (RoBERTa), XAI (Layer Integrated Gradients, keyBERT)',
             links: { github: 'https://github.com/sajjadIslam2619/mental-health-disorder-analysis', huggingface: 'https://huggingface.co/collections/SajjadIslam/multimentalroberta-models', live: '' },
             media: [
                 { type: 'image', url: project4Image1 || fallbackImage },
@@ -77,7 +77,7 @@ function Projects() {
             title: 'Medical Insurance Cost Analysis',
             shortDescription: 'Predictive Analytics for Insurance Charge Modeling',
             fullDescription: 'This Business Intelligence project aims to transform unorganized health insurance data into actionable insights that support strategic decision-making. By analyzing key factors such as age, sex, BMI, smoking status, region, and number of children, the project will reveal patterns that influence insurance charges. The resulting analytics platform will help the organization improve pricing strategies, identify high-risk customers, and design targeted marketing campaigns. Overall, this data-driven approach will enhance operational efficiency, strengthen risk management, and increase customer satisfaction and market competitiveness.',
-            tech: 'R',
+            tech: 'R, Regression Analysis, Data Visualization',
             links: { github: 'https://github.com/sajjadIslam2619/Medical_Insurance_Cost_Analysis', huggingface: '', live: '' },
             media: [
                 { type: 'image', url: project5Image1 || fallbackImage }
