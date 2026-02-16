@@ -7,6 +7,7 @@ function Activities() {
       type: 'Certification',
       items: [
         {'text': 'Azure Fundamentals by Microsoft (AZ-900)', 'link': 'https://learn.microsoft.com/en-us/users/kmsajjadulislam-8760/credentials/8d50827f38ac6fea?ref=https%3A%2F%2Fwww.linkedin.com%2F'},
+        {'text': 'Microsoft Certified: Azure AI Engineer Associate (AI-102)', 'link': 'https://learn.microsoft.com/api/credentials/share/en-us/KMSajjadulIslam-8760/A71502970F987226?sharingId=8B71D64481834F52'},
       ]
     },
     {
