@@ -28,7 +28,7 @@ function Projects() {
         {
             title: 'Clinical Entity Extractor',
             shortDescription: 'Clinical Entity Extractor',
-            fullDescription: 'This project focuses on detecting and classifying medical terminology using natural language processing techniques. It explores preprocessing, feature extraction, and machine learning approaches to identify key clinical terms within text. The work demonstrates how medical entities can be extracted, categorized, and analyzed to support downstream applications such as clinical decision support, medical documentation, and automated health information systems.',
+            fullDescription: 'This project focuses on detecting and classifying medical terminology using natural language processing techniques. It explores preprocessing, feature extraction, and machine learning approaches to identify key clinical terms within text. The work demonstrates how medical entities can be extracted, categorized, and analyzed to support downstream applications such as clinical decision support, medical documentation, and automated health information systems.\nThe project has been handed over to Northwestern Mutual and is being used by their insurance underwriters.',
             tech: 'Python(Flask), Fine-tuned BERT(ClinicalBERT)',
             links: { github: 'https://github.com/sajjadIslam2619/Medical-Terminology-Detection-Classification', huggingface: 'sdf', live: 'sdfsd' },
             media: [
