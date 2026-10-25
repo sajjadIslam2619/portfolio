@@ -45,7 +45,7 @@ function Projects() {
 
             To ensure quality and safety, the system uses automated evaluation through the G-EVAL LLM-as-Judge framework and human evaluation using safety-sensitive prompts and real OUD support posts. These components create a robust platform for generating and validating AI-assisted peer support responses in recovery contexts.
             `,
-            tech: 'Python(Django), Postgres, RAG, Prompt Engineering, LLM',
+            tech: 'Python(Django), Postgres, RAG, Prompt Engineering, LLM | Deployment (Azure)',
             links: { github: '', huggingface: '', live: '' },
             media: [
                 { type: 'vimeo', videoId: '1020239730' }
@@ -53,13 +53,13 @@ function Projects() {
         },
 
         {
-            title: 'LLM  Evaluation Framework (In-Progress)',
+            title: 'Human Centered LLM Evaluation Framework',
             shortDescription: 'LLM Fesibility Evaluation for Peer Support System.',
-            fullDescription: 'This project develops an AI-enhanced peer support evaluation application that assesses how effectively large language models (LLMs) such as GPT, Gemini, and DeepSeek can generate empathetic, culturally competent responses for veterans with PTSD. The system integrates a mental-status classifier with a prompt-engineering pipeline and enables real-time evaluation of LLM-generated responses by veterans and peer mentors. Through structured prompts, few-shot examples, and iterative lab-based rating sessions, the application collects human feedback on empathy, tone, cultural fit, safety, and relevance. The platform supports ablation studies, LLM-as-Judge scoring, and human-centered usability testing, providing a rigorous framework for comparing LLM performance in sensitive mental health contexts.',
-            tech: 'Python (FastAPI, SQLAlchemy), React',
+            fullDescription: 'This project develops an AI-enhanced peer support evaluation application that assesses how effectively large language models (LLMs) such as GPT can generate empathetic, culturally competent responses for veterans with PTSD. The system integrates a mental-status classifier with a prompt-engineering pipeline and enables real-time evaluation of LLM-generated responses by veterans and peer mentors from our local community partner, DryHootch. Through structured prompts, few-shot examples, and iterative lab-based rating sessions, the application collects human feedback on empathy, relevance, and safety, and supports ablation studies, LLM-as-Judge scoring, and human-centered usability testing.',
+            tech: 'Python (FastAPI, SQLAlchemy), React | Deployment (Backend — AWS EC2, Frontend — GitHub Pages)',
             links: { github: 'https://github.com/sajjadIslam2619/PSS-LLM-Evaluation', huggingface: '', live: '' },
             media: [
-                { type: 'image', url: fallbackImage }
+                { type: 'vimeo', videoId: '1238999653' }
             ]
         },
         {

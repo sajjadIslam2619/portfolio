@@ -8,13 +8,16 @@ function Activities() {
       items: [
         {'text': 'Azure Fundamentals by Microsoft (AZ-900)', 'link': 'https://learn.microsoft.com/en-us/users/kmsajjadulislam-8760/credentials/8d50827f38ac6fea?ref=https%3A%2F%2Fwww.linkedin.com%2F'},
         {'text': 'Microsoft Certified: Azure AI Engineer Associate (AI-102)', 'link': 'https://learn.microsoft.com/api/credentials/share/en-us/KMSajjadulIslam-8760/A71502970F987226?sharingId=8B71D64481834F52'},
+        {'text': 'Human Subject Research - CITI Program', 'link': 'https://www.citiprogram.org/verify/?w916afc84-2f0c-4a72-b9db-0fa9c6d58250-59801097'},
       ]
     },
     {
       type: 'Course',
       items: [
         {'text': 'Generative AI with Large Language Models (Coursera)', 'link': 'https://www.coursera.org/learn/generative-ai-with-llms?utm_campaign=WebsiteCoursesGAI'}, 
-        {'text': 'Natural Language Processing Specialization (Coursera)', 'link': 'https://www.coursera.org/specializations/natural-language-processing'}
+        {'text': 'Natural Language Processing Specialization (Coursera)', 'link': 'https://www.coursera.org/specializations/natural-language-processing'},
+        {'text': 'Explainable AI (XAI) Specialization by Duke University (Coursera)', 'link': 'https://www.coursera.org/account/accomplishments/specialization/A0OEGA1GZVFQ'},
+        {'text': 'MLOps | Machine Learning Operations Specialization by Duke University (Coursera)', 'link': 'https://www.coursera.org/account/accomplishments/specialization/X0D6EXPVE54O'}
       ]
     },
     {
