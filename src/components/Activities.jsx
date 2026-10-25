@@ -34,7 +34,7 @@ function Activities() {
     {
       type: 'Professional Activity',
       items: [
-        'Reviewer of JMIR Journal, IEEE IRI 2025'
+        'Reviewer of Journal of Medical Internet Research (JMIR), Array (Elsevier), Artificial Intelligence in Emergency Medicine (Elsevier), Natural language processing journal (Elsevier), Computer methods and programs in biomedicine (Elsevier), IEEE IRI 2025, 2026'
       ]
     },
     {
